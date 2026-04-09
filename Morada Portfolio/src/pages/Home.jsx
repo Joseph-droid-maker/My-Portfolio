@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './css/Home.css';
 
-const SKILLS = ['C#', 'Python', 'SQL', 'Java', 'C/C++', 'JavaScript', 'React', 'Linux', 'scikit-learn', 'GeoPandas'];
+const SKILLS = ['C#', 'Python', 'SQL', 'Java','JavaScript', 'React', 'Linux', 'scikit-learn', 'GeoPandas'];
 
 const HIGHLIGHTS = [
   { icon: '🤖', title: 'Machine Learning', text: 'Built a Random Forest classifier with 95% accuracy on real geospatial data across 1,606 Philippine municipalities.' },
