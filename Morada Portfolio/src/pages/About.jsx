@@ -1,5 +1,5 @@
 import './css/About.css';
-import profilePic from '../assets/My Profile.jpg';
+
 
 const SKILL_CATS = [
   { label: 'Languages',       items: ['C#', 'Python', 'C/C++', 'SQL', 'Java'] },
@@ -19,7 +19,7 @@ export default function About() {
 
           {/* ── Left: Profile card ── */}
             <div className="about-card">
-              <img src={profilePic} alt="Profile" className="avatar" />
+              <img src="/My-Profile.jpg" alt="Profile" className="avatar" />
               <div className="about-card-name">Morada, Mark Joseph O.</div>
               <div className="about-card-role">CS Student · Internship Seeker</div>
 

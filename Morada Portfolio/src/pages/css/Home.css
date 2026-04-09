@@ -1,4 +1,90 @@
+
+/* ── PROFILE RING WRAPPER ──────────────────────────────── */
+ 
+/* NEW: replaces the bare <img> with a ring-wrapped element
+   position:relative is required so the ::before pseudo-element
+   (the spinning ring) can be positioned relative to this div,
+   not the page */
+.profile-ring-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(240px, 25vw, 340px);
+  height: clamp(240px, 25vw, 340px);
+  border-radius: 50%;     /* NEW: makes the wrapper itself circular */
+  flex-shrink: 0;         /* NEW: prevents the wrapper from shrinking in the flex hero row */
+}
+ 
+.profile-ring-wrapper::before {
+  content: '';                      /* NEW: required for pseudo-elements to render */
+  position: absolute;
+  inset: -15px;                      /* NEW: -4px makes the ring slightly larger than the image */
+  border-radius: 50%;               /* NEW: keeps it circular */
+  background: conic-gradient(       /* NEW: conic-gradient sweeps around a centre point */
+    from 0deg,                      /* NEW: start angle */
+    transparent 0deg,               /* NEW: invisible for the first portion */
+    #00C8FF 120deg,                 /* NEW: cyan — matches your --cyan variable */
+    #1A6FFF 180deg,                 /* NEW: blue — matches your hero-accent gradient */
+    transparent 350deg              /* NEW: fades back to invisible to create a "chase" effect */
+  );
+  animation: ring-spin 5s linear infinite; /* NEW: continuous rotation */
+  z-index: 0;                       /* NEW: sits behind the image (image has z-index:1 below) */
+  opacity: 1;                       /* NEW: hidden by default — only shows on hover */
+  transition: opacity 0.4s ease;   /* NEW: fades the ring in smoothly on hover */
+}
+ 
+.profile-img {
+  width: 100%;           /* fills the wrapper */
+  height: 100%;   
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;   
+  z-index: 1;
+  
+}
+
+@keyframes ring-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
 /* ── HERO ──────────────────────────────────────────────── */
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: start;
+  flex-shrink: 1
+}
+
+@media (max-width: 1040px) {
+  .hero-container { 
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .profile-ring-wrapper {
+    order: -1;
+  }
+
+  .hero-name {
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-title {
+    text-align: center;
+  }
+}
+
+
 .hero {
   min-height: calc(100vh - var(--nav-h));
   display: flex;
@@ -28,6 +114,7 @@
   max-width: 680px; 
 }
 
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -37,7 +124,7 @@
   border-radius: 99px;
   padding: 6px 16px;
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: clamp(9px, 3vw, 11px);
   color: var(--cyan);
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -53,7 +140,7 @@
 
 .hero-name {
   font-family: var(--font-head);
-  font-size: clamp(44px, 7vw, 76px);
+  font-size: clamp(40px, 7vw, 76px);
   font-weight: 800;
   line-height: 1.0;
   letter-spacing: -2px;
@@ -84,6 +171,9 @@
 }
 
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+
+
 
 /* ── SKILLS STRIP ──────────────────────────────────────── */
 .skills-strip {

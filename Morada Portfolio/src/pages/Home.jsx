@@ -20,11 +20,12 @@ export default function Home() {
       <section className="hero">
         <div className="hero-bg" />
         <div className="hero-grid" />
-        <div className="container">
+
+        <div className="container hero-container">
           <div className="hero-content">
             <div className="hero-badge">
               <span className="hero-badge-dot" />
-              Available for Internship · 2025
+              Available for Internship · 2026
             </div>
 
             <h1 className="hero-name">
@@ -51,7 +52,13 @@ export default function Home() {
               </button>
             </div>
           </div>
+
+          <div className="profile-ring-wrapper">
+            <img src="/My-Profile.jpg" alt="Profile" className='profile-img'/>
+          </div>
         </div>
+
+        
       </section>
 
       {/* ── Skills Strip ── */}
