@@ -30,6 +30,9 @@ export default function About() {
                 <a href=" https://www.linkedin.com/in/markjoseph-morada-7934ab360" target="_blank" rel="noreferrer" className="about-link">🔗 LinkedIn</a>
                 <a href="https://github.com/Joseph-droid-maker" target="_blank" rel="noreferrer" className="about-link">⌥ GitHub</a>
                 <div className="about-link about-link-loc">📍 Manila, Philippines</div>
+                  <a href="/Morada_CV.pdf" download className="cv-download-btn">
+                    ⬇ Download CV
+                  </a>
               </div>
             </div>
           
