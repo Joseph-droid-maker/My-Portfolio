@@ -50,7 +50,7 @@ export const projects = [
     ],
     demo: null,
     github: "https://github.com/Joseph-droid-maker/Philippines-Flood-Susceptibility-System",
-    liveLink: "/flood",
+    liveLink: "https://joseph-droid-maker.github.io/Philippines-Flood-Susceptibility-System/",
   },
   {
     id: "cpu-vm",
