@@ -48,9 +48,9 @@ export const projects = [
       "The Random Forest model was trained on five integrated datasets covering elevation, monthly rainfall, population density, historical flood events, and DOST-NOAH LiDAR hazard classifications.",
       "The React frontend lets any user search a Philippine city or municipality and instantly receive a detailed flood risk assessment, feature breakdown, and tailored preparedness recommendations.",
     ],
-    demo: null,
+    demo: "https://joseph-droid-maker.github.io/Philippines-Flood-Susceptibility-System/",
     github: "https://github.com/Joseph-droid-maker/Philippines-Flood-Susceptibility-System",
-    liveLink: "https://joseph-droid-maker.github.io/Philippines-Flood-Susceptibility-System/",
+    liveLink: null,
   },
   {
     id: "cpu-vm",
