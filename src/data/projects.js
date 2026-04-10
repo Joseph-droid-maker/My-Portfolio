@@ -78,7 +78,7 @@ export const projects = [
     ],
     demo:  "https://joseph-droid-maker.github.io/CPU-scheduling-Virtual-Management-System",
     github: "https://github.com/Joseph-droid-maker/CPU-scheduling-Virtual-Management-System",
-    liveLink: "/cpu-vm",
+    liveLink: null,
   },
 
   {
