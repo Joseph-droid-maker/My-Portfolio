@@ -6,7 +6,7 @@ const SKILL_CATS = [
   { label: 'Web / Frontend',  items: ['HTML', 'CSS', 'JavaScript', 'React'] },
   { label: 'Tools & OS',      items: ['Linux (Ubuntu)', 'Windows', 'PhpMyAdmin', 'Git'] },
   { label: 'Data / ML',       items: ['scikit-learn', 'GeoPandas', 'Random Forest', 'Pandas'] },
-  { label: 'Productivity',    items: ['MS Word', 'MS Excel', 'Canva'] },
+  { label: 'Productivity',    items: ['MS Word', 'MS Excel', 'Canva', 'Visual Studio', 'Visual Studio Code'] },
   { label: 'Spoken Languages',items: ['English', 'Filipino'] },
 ];
 
