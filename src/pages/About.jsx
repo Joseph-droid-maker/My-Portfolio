@@ -90,7 +90,7 @@ export default function About() {
                   <div className="edu-school">Dipaculao National High School</div>
                   <div className="edu-degree">Senior High School – STEM Track · Dipaculao, Philippines</div>
                 </div>
-                <div className="edu-year">2022 – 2023</div>
+                <div className="edu-year">2021 – 2023</div>
               </div>
             </div>
 
