@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './css/Home.css';
 
-const SKILLS = ['C#', 'Python', 'SQL', 'Java', 'C/C++', 'JavaScript', 'React', 'Linux', 'scikit-learn', 'GeoPandas'];
+const SKILLS = ['C#', 'Python', 'SQL', 'Java','JavaScript', 'React', 'Linux', 'scikit-learn', 'GeoPandas'];
 
 const HIGHLIGHTS = [
   { icon: '🤖', title: 'Machine Learning', text: 'Built a Random Forest classifier with 95% accuracy on real geospatial data across 1,606 Philippine municipalities.' },
@@ -20,11 +20,12 @@ export default function Home() {
       <section className="hero">
         <div className="hero-bg" />
         <div className="hero-grid" />
-        <div className="container">
+
+        <div className="container hero-container">
           <div className="hero-content">
             <div className="hero-badge">
               <span className="hero-badge-dot" />
-              Available for Internship · 2025
+              Available for Internship · 2026
             </div>
 
             <h1 className="hero-name">
@@ -51,7 +52,13 @@ export default function Home() {
               </button>
             </div>
           </div>
+
+          <div className="profile-ring-wrapper">
+            <img src="/My-Profile.jpg" alt="Profile" className='profile-img'/>
+          </div>
         </div>
+
+        
       </section>
 
       {/* ── Skills Strip ── */}
