@@ -2,7 +2,7 @@ import './css/About.css';
 
 
 const SKILL_CATS = [
-  { label: 'Languages',       items: ['C#', 'Python', 'C/C++', 'SQL', 'Java'] },
+  { label: 'Languages',       items: ['C#', 'Python', 'SQL', 'Java'] },
   { label: 'Web / Frontend',  items: ['HTML', 'CSS', 'JavaScript', 'React'] },
   { label: 'Tools & OS',      items: ['Linux (Ubuntu)', 'Windows', 'PhpMyAdmin', 'Git'] },
   { label: 'Data / ML',       items: ['scikit-learn', 'GeoPandas', 'Random Forest', 'Pandas'] },
